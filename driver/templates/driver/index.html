@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Driver Index</title>
+</head>
+<body>
+<h1>Hello! This is Driver Index</h1>
+<h2>Here is new mails:</h2>
+<ul>
+{% for mail_id, mail_date, mail_from, mail_subject in new_mails %}
+    <li>{{mail_id}} - {{mail_date}} - {{mail_from}} - {{mail_subject}}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
